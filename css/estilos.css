@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lato';
+  font-size: 16px;
+  background-color: #252424;
+}
+header{
+  width: 100%;
+  height: 650px;
+  background:url('/imagenes/compu.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;  
+}
+header .textos_header{
+  margin-top: 152px;
+}
+header .titulo{
+  font-size: 85px;
+}
+header .subtitulo{
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+header .boton{
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  border: 1px solid #fff;
+  font-size: 19px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+.sesgoabajo{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #252424 transparent;
+}
+.sesgoariba{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 35vh 100vw 0 0;
+  border-style: solid;
+  border-color: #252424 transparent transparent transparent;
+}
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+}
+.sobre-nosotros{
+  text-align: center;
+  color: #fff;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.slogan{
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.parrafo{
+  margin-bottom: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+  color: #fff;
+}
+.acerca-de .boton{
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  font-weight: 300;
+  border: 1px solid #fff;
+  font-size: 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin-top: 24px;
+}
+.galeria{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.imagenes{
+  width: 20%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.imagenes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.miembros{
+  position: relative;
+}
+.cards{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+  margin: 20px 0;
+  width: 30%;
+  height: 250px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0px rgba(52, 73, 94, 0.849);
+  border-radius: 6%;
+}
+.cards img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.fondo{
+  height: 950px;
+  position: relative;
+  padding-top: 130px;
+  background: url('/imagenes/desarrollador-software.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+.sesgoabajo-unico{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #252424 transparent;
+}
+.titulo-patrocinadores, .subtitulo-patrocinadores{
+  color: #fff;
+  text-align: center;
+}
+.titulo-patrocinadores{
+  font-size: 56px;
+  margin-top: 48px;
+}
+.subtitulo-patrocinadores{
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.clientes{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: space-between;
+}
+.cliente{
+  width: 30%;
+  margin: 20px 0;
+}
+.cliente img{
+  width: 100%;
+  border-radius: 16px;
+}
+footer{
+  background: #252424;
+  height: auto;
+}
+.titulo-footer, .subtitulo-footer{
+  color: #EBFCE8;
+  text-align: center;
+  font-weight: 400;
+  font-size: 56px;
+}
+.subtitulo-footer{
+  font-size: 20px;
+  margin-bottom: 64px;
+}
+form{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+input[type="text"], input[type="email"]{
+  display: inline-block;
+  width: 48%;
+  padding: 13px;
+  border: none;
+  color: #fff;
+  font-family: 'Lato';
+  background: silver;
+  margin-bottom: 16px;
+  border-top: 5px solid rgba(0, 0, 0, .7);
+  border-radius: 16px;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  border-top: 5px solid rgba(161, 161, 161, .7);
+  border-radius: 16px;
+}
+textarea{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 13px;
+  border: none;
+  color: #fff;
+  font-family: 'Lato';
+  background: silver;
+  margin-bottom: 16px;
+  border-top: 5px solid rgba(0, 0, 0, .7);
+  border-radius: 16px;
+}
+input[type="submit"]{
+  display: inline-block;
+  padding: 13px;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background: silver;
+  width: 96px;
+}
+input[type="submit"]:hover{
+  color: #fff;
+  background: rgba(161, 161, 161, .7);
+}
+
+@media screen and (max-width:800px){
+  .card{
+    width: 48%;
+  }
+  .fondo{
+    height: auto;
+    position: relative;
+    padding-top: 130px;
+  }
+  .cliente{
+    width: 48%;
+  }
+}
+@media screen and (max-width:600px){
+  .card{
+    width: 80%;
+  }
+  .fondo{
+    height: auto;
+    position: relative;
+    padding-top: 130px;
+  }
+  .cliente{
+    width: 80%;
+  }
+}
